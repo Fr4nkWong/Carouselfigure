@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>轮播图</title>
+    <link rel="stylesheet" type="text/css" href="./css/CarouselFigure.css">
+  </head>
+
+
+  <body>
+    <div id="carousel">
+
+      <div class="carousel_list"></div>
+      <div class="switch_list"></div>
+
+    </div>
+  </body>
+
+
+  <script type="text/javascript" src="js/CarouselFigure.js"></script>
+  <script type="text/javascript">
+let carousel = new Carousel({
+    target: document.getElementById("carousel"),
+    data:[{
+      url: "demo2.html",
+      img: "./img/IMG_1.JPG"
+    },{
+      url: "demo2.html",
+      img: "./img/IMG_2.JPG"
+    },{
+      url: "demo2.html",
+      img: "./img/IMG_3.JPG"
+    },{
+      url: "demo2.html",
+      img: "./img/IMG_4.JPG"
+    },{
+      url: "demo2.html",
+      img: "./img/IMG_5.JPG"
+    }]
+});
+  </script>
+</html>
