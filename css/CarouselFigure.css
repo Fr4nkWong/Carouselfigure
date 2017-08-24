@@ -1,0 +1,129 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+#carousel{
+	width: 60%;              
+	height: 50%;
+	margin: 0px auto;
+}
+
+.carousel_list{
+	height: 90%;
+	width: 100%;
+	position: relative;         //for li absolute, be relative
+	float: left;
+	display: inline-block;       
+}
+
+.carousel_list ul{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.carousel_list ul li{
+	position: absolute;
+	display: inline-block;
+	border-radius: 5px;
+	cursor: pointer;
+	list-style: none;
+	width: 50%;
+	height: 100%;
+	transition: all .8s;         // change the img
+}
+
+.carousel_list img{
+	width: 100%;
+	height: 90%;
+}
+
+.prev_ready{
+	left: 5%;
+	opacity: 0;
+	display: none;
+	z-index: 0;
+	transform-origin: left; 
+	-webkit-transform: scale(0.8,0.8);
+	-moz-transform: scale(0.8,0.8);
+	-ms-transform: scale(0.8,0.8);
+}
+
+.prev{
+	left: 0;
+	opacity: 0.5;
+	z-index: 1;
+	transform-origin: left;
+	-webkit-transform: perspective(200px) rotateY(10deg)  translateZ(-35px);
+	-moz-transform: perspective(200px) rotateY(10deg)  translateZ(-35px);
+	-o-transform: perspective(200px) rotateY(10deg)  translateZ(-35px);
+}
+
+.current{
+	left:25%;
+	opacity: 1;
+	z-index: 2;
+	-webkit-transform: perspective(0px) rotateY(0deg)  translateZ(0px);
+	-moz-transform: perspective(0px) rotateY(0deg)  translateZ(0px);
+	-o-transform: perspective(0px) rotateY(0deg)  translateZ(0px);
+}
+
+.next{
+	right:0;
+	opacity: 0.5;
+	z-index: 1;
+	transform-origin: right;
+	-webkit-transform: perspective(200px) rotateY(-10deg)  translateZ(-35px);
+	-moz-transform: perspective(200px) rotateY(-10deg)  translateZ(-35px);
+	-o-transform: perspective(200px) rotateY(-10deg)  translateZ(-35px);
+}
+
+.next_ready{
+	right: 5%;
+	opacity: 0;
+	transform-origin: right;
+	-webkit-transform: scale(0.8,0.8);
+	-moz-transform: scale(0.8,0.8);
+	-ms-transform: scale(0.8,0.8);
+}
+
+.switch_list{
+	width: 100%;
+	height: 30px;
+	margin-left: 32%;
+	display: inline-block;
+}
+
+.switch_list ul{
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+
+.switch_list li{
+	display: inline-block;
+	float: left;
+	margin-left: 5%;
+	list-style: none;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	opacity: 0.4;
+	cursor: pointer;
+	border: 1px solid black;     //not necessary
+}
+
+.switch_list li:hover{
+	opacity: 0.6;
+}
+
+.switch_list .on{
+	opacity: 0.6;
+}
