@@ -1,2 +1,3 @@
 # Carouselfigure
-轮播DEMO
+Javascript plugin.
+Jquery plugin.
