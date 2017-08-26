@@ -1,3 +1,3 @@
 # Carouselfigure
-Javascript plugin.
+Javascript plugin.<br/>
 Jquery plugin.
